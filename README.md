@@ -19,3 +19,6 @@ This repository holds the code that was used when migrating the rsdb-beta versio
 - main.go
 ```
 7. Run the main file `go run main.go` to populate the database with all the migrated data from mongodb
+
+## Adding Edge cases
+The LoadedData Type which holds all the data after it has been unmarshalled from json contains a function `HandleEdgeCases()` located in `./importer/edgecases.go`. This function can be used to add any manipulations to any of the data arrays after being marshalled from JSON. I have used this to handle any weird edge cases in the mongodb database.
