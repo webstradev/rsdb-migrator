@@ -22,3 +22,8 @@ This repository holds the code that was used when migrating the rsdb-beta versio
 
 ## Adding Edge cases
 The LoadedData Type which holds all the data after it has been unmarshalled from json contains a function `HandleEdgeCases()` located in `./importer/edgecases.go`. This function can be used to add any manipulations to any of the data arrays after being marshalled from JSON. I have used this to handle any weird edge cases in the mongodb database.
+
+ ---
+
+## Running unit tests
+Unit tests can be run using the `make unit-test` command or any of the normal testing commands for go. The advantage of using the make command is that it will install a small package called tparse which will parse the test coverage and success results into a nice table to display in the command line.
