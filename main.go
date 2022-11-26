@@ -21,7 +21,7 @@ func main() {
 	}
 
 	// Import the necessary json files from the mongodumps folder
-	data, err := importer.ImportFiles()
+	data, err := importer.ImportFiles("./mongodumps")
 	if err != nil {
 		log.Fatalf("Error importing	files: %v", err)
 	}
