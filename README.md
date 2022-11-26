@@ -1,6 +1,8 @@
 # rsdb-migrator
 This repository holds the code that was used when migrating the rsdb-beta version from mongodb to mysql.
 
+*This code is not to be distributed or used in any way without explicit permission of the Erik Westra*
+
 ## Migration steps
 1. Create a mysql database and initialize the schemas by running the [rsdb-backend](https://github.com/webstradev/rsdb-backend) (this will automatically create all the required tables)
 2. Get a JSON dump of the mongodb database collections (articles, platforms, projects, contacts) using [mongoexport](https://www.mongodb.com/docs/database-tools/mongoexport/)
