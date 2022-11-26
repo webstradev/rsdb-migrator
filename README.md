@@ -26,4 +26,6 @@ The LoadedData Type which holds all the data after it has been unmarshalled from
  ---
 
 ## Running unit tests
-Unit tests can be run using the `make unit-test` command or any of the normal testing commands for go. The advantage of using the make command is that it will install a small package called tparse which will parse the test coverage and success results into a nice table to display in the command line.
+Unit tests can be run using the `make unit-test` command or any of the normal testing commands for go. The advantage of using the make command is that it will install a small package called tparse which will parse the test coverage and success results into a nice table to display in the command line:
+![image](https://user-images.githubusercontent.com/82543732/204091447-2296e5b4-6b3d-4802-9f56-cec1d90c9396.png)
+
