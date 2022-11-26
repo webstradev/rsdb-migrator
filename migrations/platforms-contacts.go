@@ -45,7 +45,9 @@ func MigratePlatformsToContacts(db *sqlx.DB, data *importer.LoadedData) error {
 		}
 
 		_, err = db.Exec(query, args...)
-		return err
+		if err != nil {
+			return err
+		}
 	}
 	return nil
 }
