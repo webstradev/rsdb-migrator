@@ -1,7 +1,9 @@
 [
     {
         "title": "Test Project",
-        "tags": null,
+        "tags": [
+          "tag1"
+        ],
         "platforms": [
             {
                 "$oid": "1a1"

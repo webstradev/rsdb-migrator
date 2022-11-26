@@ -67,6 +67,7 @@ var ExpectedData = LoadedData{
 			Date:        "09/09/2017",
 			Body:        "A body would go here",
 			Platforms:   []types.ObjectReference{{ObjectID: "1a1"}},
+			Tags:        []string{"tag1"},
 		},
 		{
 			OldId:       types.ObjectReference{ObjectID: "22a"},

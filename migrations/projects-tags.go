@@ -17,6 +17,10 @@ func MigrateProjectsTags(db *sqlx.DB, data *importer.LoadedData) error {
 		tags = append(tags, project.Tags...)
 	}
 
+	if len(tags) == 0 {
+		return nil
+	}
+
 	// Build an insert query with bound args for all tags (ignoring duplicates)
 	query := fmt.Sprintf(`
 	INSERT IGNORE INTO tags (tag)
