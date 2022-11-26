@@ -29,7 +29,7 @@ type Contact struct {
 	Email   string `json:"email" db:"email"`
 	Phone   string `json:"phone" db:"phone"`
 	Phone2  string `json:"phone2" db:"phone2"`
-	Address string `json:"address" db:"address"`
+	Address string `json:"adress" db:"address"`
 	Notes   string `json:"notes" db:"notes"`
 }
 
