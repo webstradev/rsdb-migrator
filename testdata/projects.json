@@ -1,0 +1,19 @@
+[
+    {
+        "title": "Test Project",
+        "tags": null,
+        "platforms": [
+            {
+                "$oid": "1a1"
+            }
+        ],
+        "link": "https://www.example.com",
+        "description": "Test Description",
+        "date": "26/11/2022",
+        "body": "A body would go here",
+        "_id": {
+            "$oid": "11a"
+        },
+        "__v": 1
+    }
+]

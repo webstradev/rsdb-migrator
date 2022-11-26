@@ -1,0 +1,27 @@
+[
+    {
+        "website": "https://www.example.com",
+        "source": "testdata",
+        "projects": [],
+        "privacy": "Private",
+        "name": "Test Platform",
+        "generalNotes": "",
+        "country": "Testopia",
+        "contacts": [
+            {
+                "$oid": "a1a"
+            }
+        ],
+        "comment": "",
+        "category": "Category1",
+        "articles": [
+            {
+                "$oid": "456"
+            }
+        ],
+        "_id": {
+            "$oid": "1a1"
+        },
+        "__v": 3
+    }
+]

@@ -1,0 +1,37 @@
+[
+  {
+      "title": "Title",
+      "tags": [
+          "tag1",
+          "tag2"
+      ],
+      "platforms": [
+          {
+              "$oid": "abc"
+          }
+      ],
+      "link": "http://www.example.com",
+      "description": "Some description",
+      "date": "26/11/2022",
+      "body": "This would contain some long body of text",
+      "_id": {
+          "$oid": "123"
+      },
+      "__v": 1
+  },
+  {
+    "title": "Title2",
+    "tags": [
+        "tag1"
+    ],
+    "platforms": [],
+    "link": "http://www.example.com",
+    "description": "Some other description",
+    "date": "26/11/2022",
+    "body": "This would contain some long body of text",
+    "_id": {
+        "$oid": "456"
+    },
+    "__v": 1
+}
+]
