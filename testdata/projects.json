@@ -9,11 +9,28 @@
         ],
         "link": "https://www.example.com",
         "description": "Test Description",
-        "date": "26/11/2022",
+        "date": "2017",
         "body": "A body would go here",
         "_id": {
             "$oid": "11a"
         },
         "__v": 1
-    }
+    },
+    {
+      "title": "Test Project2",
+      "tags": null,
+      "platforms": [
+          {
+              "$oid": "1a1"
+          }
+      ],
+      "link": "https://www.example.com",
+      "description": "Test Description",
+      "date": "2019",
+      "body": "A body would go here",
+      "_id": {
+          "$oid": "22a"
+      },
+      "__v": 1
+  }
 ]
