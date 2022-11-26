@@ -8,7 +8,7 @@ func (data *LoadedData) HandleEdgeCases() {
 			data.Articles[idx] = article
 		}
 		if article.Date == "2019" {
-			article.Date = "09/09/2017"
+			article.Date = "09/09/2019"
 			data.Articles[idx] = article
 		}
 	}
@@ -20,7 +20,7 @@ func (data *LoadedData) HandleEdgeCases() {
 			data.Projects[idx] = project
 		}
 		if project.Date == "2019" {
-			project.Date = "09/09/2017"
+			project.Date = "09/09/2019"
 			data.Projects[idx] = project
 		}
 	}
