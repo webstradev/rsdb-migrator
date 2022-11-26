@@ -4,6 +4,7 @@ import (
 	"encoding/json"
 	"io"
 	"os"
+	"path/filepath"
 
 	"github.com/webstradev/rsdb-migrator/types"
 )
@@ -15,31 +16,32 @@ type LoadedData struct {
 	Projects  []types.Project
 }
 
-func ImportFiles() (*LoadedData, error) {
+func ImportFiles(folderPath string) (*LoadedData, error) {
 	// Initialize empty data obejct to easily get the typed empty arrays for the functions below
 	data := LoadedData{}
 
 	// Load all the required files and parse the json into the arrays of the data object
-	err := LoadAndParseFile("./mongodumps/articles.json", &data.Articles)
+	err := LoadAndParseFile(filepath.Join(folderPath, "articles.json"), &data.Articles)
 	if err != nil {
 		return nil, err
 	}
 
-	err = LoadAndParseFile("./mongodumps/contacts.json", &data.Contacts)
+	err = LoadAndParseFile(filepath.Join(folderPath, "contacts.json"), &data.Contacts)
 	if err != nil {
 		return nil, err
 	}
 
-	err = LoadAndParseFile("./mongodumps/platforms.json", &data.Platforms)
+	err = LoadAndParseFile(filepath.Join(folderPath, "platforms.json"), &data.Platforms)
 	if err != nil {
 		return nil, err
 	}
 
-	err = LoadAndParseFile("./mongodumps/projects.json", &data.Projects)
+	err = LoadAndParseFile(filepath.Join(folderPath, "projects.json"), &data.Projects)
 	if err != nil {
 		return nil, err
 	}
 
+	// Call the edge case function to handle any required data manipulations
 	data.HandleEdgeCases()
 
 	return &data, nil

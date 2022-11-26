@@ -1,5 +1,6 @@
 package types
 
+// An ObjectReference is a reference to an object using its mongodb object key. This will only be stored in the database
 type ObjectReference struct {
 	ObjectID string `json:"$oid"`
 }
