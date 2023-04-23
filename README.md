@@ -1,4 +1,7 @@
 # rsdb-migrator
+[![Run Tests](https://github.com/webstradev/rsdb-migrator/actions/workflows/test.yml/badge.svg)](https://github.com/webstradev/rsdb-migrator/actions/workflows/test.yml)
+[![Go Report Card](https://goreportcard.com/badge/github.com/webstradev/rsdb-migrator)](https://goreportcard.com/report/github.com/webstradev/rsdb-migrator)
+[![CodeQL](https://github.com/webstradev/rsdb-migrator/actions/workflows/codeql.yml/badge.svg)](https://github.com/webstradev/gin-migrator/actions/workflows/codeql.yml)
 This repository holds the code that was used when migrating the rsdb-beta version from mongodb to mysql.
 
 *This code is not to be distributed or used in any way without explicit permission of the Erik Westra*
